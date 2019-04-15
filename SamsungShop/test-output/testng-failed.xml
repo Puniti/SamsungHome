@@ -6,11 +6,7 @@
       <class name="testcases.HomeTestCases">
         <methods>
           <include name="Home1Test"/>
-          <include name="LogoTest"/>
           <include name="setSession"/>
-          <include name="VerifyPage"/>
-          <include name="DiscoverTest"/>
-          <include name="Link"/>
         </methods>
       </class> <!-- testcases.HomeTestCases -->
     </classes>

@@ -4,14 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import factory.DataProviderClass;
+import factory.ExcelDataProvider;
 import factory.browserFactory;
-import pages.HomePart1;
 import pages.Login;
-import utility.BaseClass;
 
 public class LoginTest {
 	Login log;
@@ -20,8 +17,8 @@ public class LoginTest {
 	
 	@BeforeClass
     public void setSession() {
-      fact= new browserFactory(driver);
-      driver=fact.GetSession("chrome", "https://www.samsung.com ");
+     
+      driver=browserFactory.GetSession("chrome", "https://www.samsung.com ");
       log= PageFactory.initElements(driver, Login.class);
       
 	}
@@ -29,7 +26,7 @@ public class LoginTest {
 	
 	
 	
-  @Test (priority= 1 ,dataProvider="Logindata",dataProviderClass=DataProviderClass.class)
+  @Test (priority= 1 ,dataProvider="Logindata",dataProviderClass=ExcelDataProvider.class)
   public void Userlogin(String Uname, String Upassword, String name) {
 	 
 	  log= PageFactory.initElements(driver, Login.class);

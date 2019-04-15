@@ -1,44 +1,29 @@
 package testcases;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-import factory.browserFactory;
 import pages.HomePart1;
-import utility.BaseClass;
 
-public class HomeTestCases {
-	WebDriver driver;
-	browserFactory fact;
+public class HomeTestCases extends BaseClass {
+	
 	HomePart1 home;
-	
-	
-	
-	@BeforeClass
-    public void setSession() {
-      fact= new browserFactory(driver);
-      driver=fact.GetSession("chrome", "https://www.samsung.com ");
-      home= PageFactory.initElements(driver, HomePart1.class);
-      
-	}
-
 	
 // test method to verify page title
 	@Test(priority = 0)
 	public void VerifyPage() {
 		String title = driver.getTitle();
-		Assert.assertTrue(title.contains("Samsung India | Mobile | TV | Home Appliances"));
+		AssertJUnit.assertTrue(title.contains("Samsung India | Mobile | TV | Home Appliances"));
 
 	}
 // test method to verify click function of logo
 	@Test(priority = 1)
 	public void LogoTest() {
+		home = PageFactory.initElements(driver,HomePart1.class);
 		home.TestLogoVisibility();
-		Assert.assertTrue(home.TestClickableLogo());
-		Assert.assertTrue(home.TestLogoText());
+		AssertJUnit.assertTrue(home.TestClickableLogo());
+		AssertJUnit.assertTrue(home.TestLogoText());
 	}
 
 	//test method to check the options under first tab

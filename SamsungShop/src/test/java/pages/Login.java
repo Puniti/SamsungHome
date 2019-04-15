@@ -12,7 +12,8 @@ public class Login {
 	public Login(WebDriver driver) {
 		this.driver1 = driver;
 	}
-
+    // Locators for login function
+	
 	@FindBy(xpath = "//button[@type='button' and @title='Login']")
 	WebElement LoginIcon;
 	@FindBy(xpath = "(//a [text()='Log-In'])[2]")
