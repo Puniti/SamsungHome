@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42798" started-at="2019-04-15T17:32:57Z" finished-at="2019-04-15T17:33:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42798" started-at="2019-04-15T17:32:57Z" finished-at="2019-04-15T17:33:40Z">
+      <class name="testcases.LoginTest">
+        <test-method status="PASS" signature="SetUpTestSuit()[pri:0, instance:testcases.LoginTest@57baeedf]" name="SetUpTestSuit" is-config="true" duration-ms="394" started-at="2019-04-15T17:32:57Z" finished-at="2019-04-15T17:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpTestSuit -->
+        <test-method status="PASS" signature="setSession()[pri:0, instance:testcases.LoginTest@57baeedf]" name="setSession" is-config="true" duration-ms="15023" started-at="2019-04-15T17:32:57Z" finished-at="2019-04-15T17:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setSession -->
+        <test-method status="PASS" signature="CheckDriverState()[pri:0, instance:testcases.LoginTest@57baeedf]" name="CheckDriverState" is-config="true" duration-ms="22" started-at="2019-04-15T17:33:14Z" finished-at="2019-04-15T17:33:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDriverState -->
+        <test-method status="PASS" signature="Userlogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.LoginTest@57baeedf]" name="Userlogin" duration-ms="4504" started-at="2019-04-15T17:33:14Z" data-provider="Logindata" finished-at="2019-04-15T17:33:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chunmun.testing@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[samsung@1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chunmun]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userlogin -->
+        <test-method status="PASS" signature="closeDriverWindow()[pri:0, instance:testcases.LoginTest@57baeedf]" name="closeDriverWindow" is-config="true" duration-ms="2150" started-at="2019-04-15T17:33:18Z" finished-at="2019-04-15T17:33:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverWindow -->
+        <test-method status="PASS" signature="FlushReports()[pri:0, instance:testcases.LoginTest@57baeedf]" name="FlushReports" is-config="true" duration-ms="976" started-at="2019-04-15T17:33:20Z" finished-at="2019-04-15T17:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlushReports -->
+        <test-method status="PASS" signature="CheckDriverState()[pri:0, instance:testcases.LoginTest@57baeedf]" name="CheckDriverState" is-config="true" duration-ms="11583" started-at="2019-04-15T17:33:21Z" finished-at="2019-04-15T17:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDriverState -->
+        <test-method status="PASS" signature="Userlogin(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.LoginTest@57baeedf]" name="Userlogin" duration-ms="4573" started-at="2019-04-15T17:33:33Z" data-provider="Logindata" finished-at="2019-04-15T17:33:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[punitichauhan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iloveparents08911]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Puniti]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userlogin -->
+        <test-method status="PASS" signature="closeDriverWindow()[pri:0, instance:testcases.LoginTest@57baeedf]" name="closeDriverWindow" is-config="true" duration-ms="2193" started-at="2019-04-15T17:33:37Z" finished-at="2019-04-15T17:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverWindow -->
+        <test-method status="PASS" signature="FlushReports()[pri:0, instance:testcases.LoginTest@57baeedf]" name="FlushReports" is-config="true" duration-ms="294" started-at="2019-04-15T17:33:40Z" finished-at="2019-04-15T17:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlushReports -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
